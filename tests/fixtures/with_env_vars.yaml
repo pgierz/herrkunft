@@ -1,0 +1,10 @@
+# Configuration using environment variables
+database:
+  url: !ENV ${DATABASE_URL}
+  password: !ENV ${DB_PASSWORD}
+
+api:
+  key: !ENV ${API_KEY}
+  secret: !ENV ${API_SECRET}
+
+static_value: "this is not an env var"

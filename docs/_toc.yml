@@ -1,0 +1,53 @@
+# Table of Contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+chapters:
+  - file: getting-started/installation
+    title: Installation
+  - file: getting-started/quickstart
+    title: Quick Start
+  - file: getting-started/examples
+    title: Examples
+
+  - caption: User Guide
+    chapters:
+      - file: user-guide/loading-yaml
+        title: Loading YAML Files
+      - file: user-guide/tracking-provenance
+        title: Tracking Provenance
+      - file: user-guide/hierarchical-config
+        title: Hierarchical Configuration
+      - file: user-guide/saving-yaml
+        title: Saving YAML Files
+
+  - caption: Tutorials
+    chapters:
+      - file: tutorials/basic-usage
+        title: Basic Usage
+      - file: tutorials/scientific-workflows
+        title: Scientific Workflows
+      - file: tutorials/multi-environment
+        title: Multi-Environment Config
+
+  - caption: API Reference
+    chapters:
+      - file: api/core
+        title: Core Module
+      - file: api/types
+        title: Types Module
+      - file: api/yaml
+        title: YAML Module
+      - file: api/utils
+        title: Utils Module
+
+  - caption: Reference
+    chapters:
+      - file: reference/architecture
+        title: Architecture
+      - file: reference/changelog
+        title: Changelog
+
+  - file: contributing
+    title: Contributing

@@ -1,0 +1,78 @@
+version: 1
+project:
+  id: herrkunft
+  title: herrkunft
+  subtitle: Configuration Provenance Tracking for Python
+  description: Track configuration value origins and modification history through YAML parsing
+  keywords:
+    - provenance
+    - configuration
+    - yaml
+    - tracking
+    - python
+  authors:
+    - name: Paul Gierz
+      email: paul.gierz@awi.de
+      affiliations:
+        - Alfred Wegener Institute
+    - name: Miguel Andrés-Martínez
+      email: miguel.andres-martinez@awi.de
+      affiliations:
+        - Alfred Wegener Institute
+  github: https://github.com/pgierz/herrkunft
+  license: MIT
+  open_access: true
+
+site:
+  template: book-theme
+  title: herrkunft Documentation
+  options:
+    logo_text: herrkunft
+  actions:
+    - title: GitHub
+      url: https://github.com/pgierz/herrkunft
+  nav:
+    - title: Getting Started
+      children:
+        - title: Installation
+          url: /getting-started/installation
+        - title: Quick Start
+          url: /getting-started/quickstart
+        - title: Examples
+          url: /getting-started/examples
+    - title: User Guide
+      children:
+        - title: Loading YAML Files
+          url: /user-guide/loading-yaml
+        - title: Tracking Provenance
+          url: /user-guide/tracking-provenance
+        - title: Hierarchical Configuration
+          url: /user-guide/hierarchical-config
+        - title: Saving YAML Files
+          url: /user-guide/saving-yaml
+    - title: Tutorials
+      children:
+        - title: Basic Usage
+          url: /tutorials/basic-usage
+        - title: Scientific Workflows
+          url: /tutorials/scientific-workflows
+        - title: Multi-Environment Config
+          url: /tutorials/multi-environment
+    - title: API Reference
+      children:
+        - title: Core Module
+          url: /api/core
+        - title: Types Module
+          url: /api/types
+        - title: YAML Module
+          url: /api/yaml
+        - title: Utils Module
+          url: /api/utils
+    - title: Reference
+      children:
+        - title: Architecture
+          url: /reference/architecture
+        - title: Changelog
+          url: /reference/changelog
+    - title: Contributing
+      url: /contributing

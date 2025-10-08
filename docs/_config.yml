@@ -1,0 +1,128 @@
+# Jupyter Book Configuration
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: herrkunft
+author: Paul Gierz, Miguel Andrés-Martínez
+copyright: "2024"
+logo: https://raw.githubusercontent.com/pgierz/herrkunft/main/docs/logo.png
+
+# Force re-execution of notebooks on each build
+execute:
+  execute_notebooks: auto
+  timeout: 300
+  allow_errors: false
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: herrkunft.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/pgierz/herrkunft
+  path_to_book: docs
+  branch: main
+
+# Add GitHub buttons to your book
+html:
+  favicon: https://raw.githubusercontent.com/pgierz/herrkunft/main/docs/favicon.ico
+  use_issues_button: true
+  use_repository_button: true
+  use_edit_button: true
+  home_page_in_navbar: true
+  baseurl: https://herrkunft.readthedocs.io/
+
+# Launch buttons for Binder
+launch_buttons:
+  notebook_interface: jupyterlab
+  binderhub_url: https://mybinder.org
+  thebe: true
+
+# Enable MyST extensions
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_admonition
+    - html_image
+    - linkify
+    - replacements
+    - smartquotes
+    - substitution
+    - tasklist
+
+# MyST-NB configuration
+nb_execution_mode: auto
+nb_execution_show_tb: true
+
+sphinx:
+  config:
+    html_theme: sphinx_book_theme
+    html_theme_options:
+      repository_url: https://github.com/pgierz/herrkunft
+      use_repository_button: true
+      use_issues_button: true
+      use_edit_button: true
+      path_to_docs: docs
+      logo_only: false
+      show_toc_level: 2
+      repository_branch: main
+      launch_buttons:
+        notebook_interface: jupyterlab
+        binderhub_url: ""
+    html_title: "herrkunft Documentation"
+    html_short_title: "herrkunft"
+    language: en
+    pygments_style: sphinx
+
+    # Extension configuration
+    myst_heading_anchors: 3
+
+    # Add autodoc configuration
+    autodoc_typehints: description
+    autodoc_member_order: bysource
+    autodoc_default_options:
+      members: true
+      undoc-members: true
+      show-inheritance: true
+      special-members: __init__
+
+    # Napoleon settings for Google/NumPy style docstrings
+    napoleon_google_docstring: true
+    napoleon_numpy_docstring: true
+    napoleon_include_init_with_doc: false
+    napoleon_include_private_with_doc: false
+    napoleon_include_special_with_doc: true
+    napoleon_use_admonition_for_examples: true
+    napoleon_use_admonition_for_notes: true
+    napoleon_use_admonition_for_references: false
+    napoleon_use_ivar: false
+    napoleon_use_param: true
+    napoleon_use_rtype: true
+
+  extra_extensions:
+    - sphinx.ext.autodoc
+    - sphinx.ext.napoleon
+    - sphinx.ext.viewcode
+    - sphinx.ext.intersphinx
+    - sphinx.ext.mathjax
+    - sphinx_copybutton
+    - sphinx_design
+    - myst_nb
+
+  intersphinx_mapping:
+    python:
+      - https://docs.python.org/3
+      - null
+    pydantic:
+      - https://docs.pydantic.dev/latest/
+      - null
+    ruamel:
+      - https://yaml.readthedocs.io/en/latest/
+      - null

@@ -1,0 +1,17 @@
+# Development environment configuration
+application:
+  debug: true
+
+database:
+  host: localhost
+  port: 5432
+  name: myapp_dev
+
+server:
+  host: 127.0.0.1
+  port: 8080
+  workers: 2
+
+logging:
+  level: DEBUG
+  format: colored

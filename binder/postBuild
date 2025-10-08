@@ -1,0 +1,3 @@
+#!/bin/bash
+# Install herrkunft package in development mode
+pip install -e .

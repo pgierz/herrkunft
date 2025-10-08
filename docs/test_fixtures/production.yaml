@@ -1,0 +1,16 @@
+# Production overrides
+database:
+  host: prod.db.example.com
+  pool_size: 50
+  timeout: 60
+
+server:
+  host: prod.example.com
+  port: 443
+  workers: 16
+  max_connections: 5000
+
+logging:
+  level: WARNING
+  output: file
+  file_path: /var/log/myapp/app.log

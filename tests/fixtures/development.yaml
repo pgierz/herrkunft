@@ -1,0 +1,12 @@
+# Development environment overrides
+app:
+  debug: true
+  workers: 2
+
+database:
+  host: localhost
+  pool_size: 2
+
+logging:
+  level: DEBUG
+  verbose: true

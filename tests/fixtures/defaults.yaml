@@ -1,0 +1,14 @@
+# Default configuration values
+app:
+  name: DefaultApp
+  version: 1.0
+  debug: false
+  timeout: 30
+
+database:
+  pool_size: 5
+  retry_attempts: 3
+
+logging:
+  level: INFO
+  format: json

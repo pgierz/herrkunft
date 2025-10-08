@@ -1,0 +1,28 @@
+# Configuration with deeply nested structures
+services:
+  api:
+    endpoints:
+      users:
+        path: /api/v1/users
+        methods:
+          - GET
+          - POST
+          - DELETE
+        auth:
+          required: true
+          type: bearer
+      products:
+        path: /api/v1/products
+        methods:
+          - GET
+        auth:
+          required: false
+
+  cache:
+    redis:
+      host: localhost
+      port: 6379
+      databases:
+        session: 0
+        cache: 1
+        queue: 2

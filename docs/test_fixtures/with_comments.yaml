@@ -1,0 +1,26 @@
+# Example configuration with provenance comments
+database:
+  # from: defaults.yaml | line: 7 | col: 8 | category: defaults
+  host: prod.db.example.com
+  # from: defaults.yaml | line: 8 | col: 8 | category: defaults
+  port: 5432
+  # from: defaults.yaml | line: 9 | col: 8 | category: defaults
+  name: myapp_db
+  # from: production.yaml | line: 3 | col: 15 | category: production
+  pool_size: 50
+  # from: production.yaml | line: 4 | col: 12 | category: production
+  timeout: 60
+
+server:
+  # from: production.yaml | line: 7 | col: 8 | category: production
+  host: prod.example.com
+  # from: production.yaml | line: 8 | col: 8 | category: production
+  port: 443
+  # from: production.yaml | line: 9 | col: 11 | category: production
+  workers: 16
+
+logging:
+  # from: production.yaml | line: 13 | col: 9 | category: production
+  level: WARNING
+  # from: defaults.yaml | line: 22 | col: 10 | category: defaults
+  format: json

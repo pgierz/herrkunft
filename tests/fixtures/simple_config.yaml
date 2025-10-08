@@ -1,0 +1,22 @@
+# Simple configuration file for testing
+database:
+  host: localhost
+  port: 5432
+  name: testdb
+  credentials:
+    username: admin
+    password: secret123
+
+application:
+  name: MyApp
+  version: 1.0.0
+  debug: true
+  features:
+    - authentication
+    - logging
+    - monitoring
+
+server:
+  workers: 4
+  timeout: 30
+  bind: 0.0.0.0:8000

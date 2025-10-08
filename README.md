@@ -2,7 +2,7 @@
 
 **From German "Herkunft" (origin, provenance)**
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pgierz/herrkunft/main?labpath=docs%2Fnotebooks)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pgierz/herrkunft/master?labpath=docs%2Fnotebooks)
 
 Track configuration value origins and modification history through YAML parsing with modern Python best practices.
 
@@ -32,7 +32,7 @@ Perfect for scientific computing, workflow configuration, and any application wh
 
 Launch interactive notebooks in your browser (no installation required):
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pgierz/herrkunft/main?labpath=docs%2Fnotebooks)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pgierz/herrkunft/master?labpath=docs%2Fnotebooks)
 
 ## Installation
 
